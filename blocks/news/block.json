@@ -1,0 +1,23 @@
+{
+	"name": "acf/news",
+	"apiVersion": "2",
+    "title": "News",
+    "description": "A custom news slider block.",
+    "category": "formatting",
+    "icon": "format-gallery",
+    "keywords": ["news"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+	"supports" : {
+		"align" : ["wide"],
+        "color": {
+            "text": true,
+            "background": true,
+			"link": true
+        }
+	},
+    "style" : [ "flickity","file:./style.css"],
+    "script" :["tailwind","flickity" ,"wp-block-acf-carousel"]
+}
